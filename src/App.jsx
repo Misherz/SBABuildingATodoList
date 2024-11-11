@@ -1,7 +1,6 @@
-import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
-import AddButton from './components/Add'
+import AddButton from './controller/Add'
 import CheckBox from './components/CheckBox'
 import { getData } from './data.mjs'
 
