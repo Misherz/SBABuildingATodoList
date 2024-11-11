@@ -34,7 +34,7 @@ export default function AddButton() {
             <div>
                 <ul>
                     {pokemon.map((pokemonName, i) => (
-                        <li key={i}>{pokemonName}</li>
+                        <li key={i}><input type="checkbox"/>{pokemonName}</li>
                     ))}
                 </ul>
             </div>
