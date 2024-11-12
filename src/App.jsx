@@ -1,7 +1,7 @@
+import React from 'react'
 import './App.css'
 import Header from './components/Header'
-import AddButton from './controller/Add'
-import CheckBox from './components/CheckBox'
+import AddButton from './controller/AddTask'
 import { getData } from './data.mjs'
 
 function App() {
