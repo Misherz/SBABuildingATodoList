@@ -19,7 +19,8 @@ export default function AddButton() {
             if (formData.trim()) {
                 const pokemonName = `${formData}`;
                 setPokemons(prevPokemon => [
-                    { id: Date.now(), name: pokemonName }
+                    { id: Date.now(), name: pokemonName },
+                    ...prevPokemon
                 ]);
                 setFormData("");
             }
@@ -39,6 +40,8 @@ export default function AddButton() {
     function deleteButton(id) {
         setPokemons(pokemon.filter(poke => poke.id !== id));
     }
+
+
 
     return (
         <div>
